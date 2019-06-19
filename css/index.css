@@ -139,7 +139,7 @@ body {
   margin-top: 10px;
   margin-right: 10px;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .topNavigation {
     width: 100%;
   }
@@ -150,6 +150,10 @@ body {
   display: flex;
   font-size: 1.5rem;
   justify-content: space-around;
+}
+.topNavigation nav a {
+  text-decoration: none;
+  color: #4c535e;
 }
 @media (max-width: 515px) {
   .topNavigation nav {
@@ -166,13 +170,14 @@ img {
 }
 .subtitle {
   font-size: 3rem;
+  font-family: 'Shadows Into Light', cursive;
 }
 header {
   background: #4c535e;
   margin: 40px;
   padding: 25px;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   header {
     width: 100%;
     display: flex;
@@ -206,7 +211,7 @@ header {
   margin: 20px 50px 20px 50px;
   margin-bottom: 20px;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .middleContent {
     margin: 0;
     border: 20px solid #4c535e;
@@ -240,7 +245,7 @@ header {
   margin-left: 50px;
   width: 100%;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .table table {
     margin-left: 25px;
   }
@@ -263,7 +268,7 @@ header {
   border-bottom: 0.5px solid;
   margin-right: 50px;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .workHistory {
     display: flex;
     justify-content: center;
@@ -274,7 +279,7 @@ header {
   margin-top: 60px;
   font-size: 1.5rem;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .contactsec {
     display: flex;
     flex-direction: column;
@@ -297,7 +302,7 @@ header {
   font-size: 1.5rem;
   color: white;
 }
-@media (max-width: 515px) {
+@media (max-width: 500px) {
   .footer {
     margin-left: 20px;
     margin-left: 50px;
@@ -308,7 +313,7 @@ header {
     font-size: 3rem;
   }
 }
-@media (max-width: 515px) and (max-width: 515px) {
+@media (max-width: 500px) and (max-width: 500px) {
   .footer {
     display: flex;
     flex-direction: column;
