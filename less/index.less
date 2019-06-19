@@ -58,7 +58,7 @@ html, body {
 	font-size: 62.5%;
 }
 
-///////////////////////////////////////////////////////////
+//varibles 
 
 @Trout: #4c535e;
 @Rhino: #273A59;
@@ -78,12 +78,7 @@ html, body {
 	
 			font-size: 1.5rem;
 		}
-	
-
-
-
 }
-
 
 img{
 	border-radius: 5px;
@@ -104,7 +99,7 @@ img{
 
 header{
 	background: @Trout;
-	margin: 50px;
+	margin: 40px;
 	padding: 25px;
 	
 
@@ -157,11 +152,27 @@ header{
 					
 }
 
+.table{
+	width: 90%;
 
+	table{
+		font-size: 2rem;
+		margin-left: 50px;
+		width: 100%;
 
-table{
-	font-size: 2rem;
+		tr:nth-child(even) {
+			background-color: @Trout;
+		}
+
+			tr{
+				padding: 10px 0;
+				font-size: 2.5rem;
+			}
+	}
+
 }
+
+
 
 .subtitle{
 	border-bottom: .5px solid;
@@ -171,8 +182,45 @@ table{
 .workHistory{
 	font-size: 3rem;
 	margin-left: 50px;
-	margin-bottom: 5px;
+	margin-bottom: 0;
+	border-bottom: .5px solid;
+	margin-right: 50px;
 }
+
+
+
+.contactsec{
+	margin-left: 50px;
+	margin-top: 60px;
+	font-size: 1.5rem;
+	.ListenUp();
+
+
+		h1{
+			font-size: 2rem;
+
+		}
+}
+
+
+.footer{
+	font-size: 5rem;
+	margin-right: 50px;
+	margin-left: 50px;
+	background: @Rhino;
+	
+}
+	
+	
+
+
+
+
+	
+
+
+
+
 					
 					
 
