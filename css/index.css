@@ -139,14 +139,72 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-nav {
+.topNavigation nav {
+  margin-bottom: 20px;
   width: 30%;
   display: flex;
   justify-content: space-around;
+  font-size: 1.5rem;
 }
 img {
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .title {
   font-size: 5rem;
+}
+.subtitle {
+  font-size: 3rem;
+}
+header {
+  background: #4c535e;
+  margin: 50px;
+  padding: 25px;
+}
+.container {
+  display: flex;
+}
+.container .wrapper {
+  margin-top: 50px;
+  width: 50%;
+  font-size: 2rem;
+  font: Sans-serif;
+}
+.middleContent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  margin: 20px 50px 20px 50px;
+  margin-bottom: 20px;
+}
+.middleContent .ListenUp {
+  width: 40%;
+}
+.middleContent .ListenUp h2 {
+  font-size: 3rem;
+}
+.middleContent .stuffImGoodAt {
+  width: 40%;
+}
+.middleContent h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.middleContent ul {
+  line-height: 1.5;
+}
+.middleContent li {
+  border: 0.5px solid lightgray;
+}
+table {
+  font-size: 2rem;
+}
+.subtitle {
+  border-bottom: 0.5px solid;
+  padding-bottom: 40px;
+}
+.workHistory {
+  font-size: 3rem;
+  margin-left: 50px;
+  margin-bottom: 5px;
 }
