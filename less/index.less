@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+ header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -54,6 +54,272 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
+
+//varibles 
+
+@Trout: #4c535e;
+@Rhino: #273A59;
+@black-border: 1px solid black;
+@link-font: Sans-serif;
+
+
+.topNavigation{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+	margin-right: 10px;
+
+	@media(max-width: 500px ){
+		width: 100%;
+	}
+		
+		nav{
+		margin-bottom: 20px;
+		width: 30%;
+		display: flex;
+		font-size: 1.5rem;
+		justify-content: space-around;
+
+				a{
+					text-decoration: none;
+					color: @Trout;
+				}
+
+			@media(max-width: 515px){
+			width: 100%;
+			justify-content: space-around;
+		}
+			
+		}
+}
+
+img{
+	border-radius: 5px;
+	margin-bottom: 10px;
+	
+}
+
+.title{
+	font-size: 5rem;
+
+		
+}
+
+.subtitle{
+	font-size: 3rem;
+	font-family: 'Shadows Into Light', cursive;
+	
+}
+
+header{
+	background: @Trout;
+	margin: 40px;
+	padding: 25px;
+	
+	
+	@media(max-width: 500px){
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		align-items: center;
+
+			.container{
+				width: 100%;
+			
+				.wrapper{
+				justify-content: center;
+				align-items: center;
+
+					width: 100%;
+				}
+			}
+				
+
+			
+		
+		
+		}
+
+}
+
+.container{
+	display: flex;
+	
+
+		.wrapper{
+			margin-top: 50px;
+			width: 50%;
+
+				font-size: 2rem;
+				font: @link-font;
+	}
+}
+
+.middleContent{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.8rem;
+	margin: 20px 50px 20px 50px;
+	margin-bottom: 20px;
+
+	@media(max-width: 500px){
+		margin: 0;
+		border: 20px solid @Trout;
+				
+	}
+	
+
+		.ListenUp{
+			width: 40%;
+			margin-left: 10px;
+
+				h2{
+				font-size: 3rem;
+			}
+
+		}
+
+		.stuffImGoodAt{
+			width: 40%;
+		}
+				h3{
+				font-size: 3rem;
+				margin-bottom: 10px;
+				}
+				
+					ul{
+						line-height: 1.5;
+					}
+						li{
+							border: .5px solid lightgray; 
+						}
+					
+}
+
+.table{
+	width: 90%;
+
+	table{
+		font-size: 2rem;
+		margin-left: 50px;
+		width: 100%;
+		
+
+		@media(max-width: 500px){
+			margin-left: 25px;
+			
+		}
+	}
+
+		tr:nth-child(even) {
+			background-color: @Trout;
+		}
+
+			tr{
+				padding: 10px 0;
+				font-size: 2.5rem;
+			}
+	}
+
+
+
+
+
+.subtitle{
+	border-bottom: .5px solid;
+	padding-bottom: 40px;
+}
+
+.workHistory{
+	font-size: 3rem;
+	margin-left: 50px;
+	margin-bottom: 0;
+	border-bottom: .5px solid;
+	margin-right: 50px;
+
+	@media(max-width: 500px){
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+
+
+.contactsec{
+	margin-left: 50px;
+	margin-top: 60px;
+	font-size: 1.5rem;
+
+	@media(max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		width: 100%;
+		
+	}
+	
+
+
+		h1{
+			font-size: 3rem;
+
+		}
+}
+
+
+.footer{	
+	width:90%;
+	height: 60px;
+	margin-left: 50px;
+	margin-top: 20px;
+	background: @Trout;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: white;
+
+	@media(max-width: 500px){
+		margin-left: 20px;
+		.contactsec();
+		
+	}
+
+
+}
+		
+	
+	
+
+	
+	
+
+
+
+
+	
+
+
+
+
+					
+					
+
+				
+					
+
+		
+	
+
+
+
+
+
+
 

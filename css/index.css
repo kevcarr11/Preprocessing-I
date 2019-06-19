@@ -1,1 +1,324 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.topNavigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .topNavigation {
+    width: 100%;
+  }
+}
+.topNavigation nav {
+  margin-bottom: 20px;
+  width: 30%;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: space-around;
+}
+.topNavigation nav a {
+  text-decoration: none;
+  color: #4c535e;
+}
+@media (max-width: 515px) {
+  .topNavigation nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 5rem;
+}
+.subtitle {
+  font-size: 3rem;
+  font-family: 'Shadows Into Light', cursive;
+}
+header {
+  background: #4c535e;
+  margin: 40px;
+  padding: 25px;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+  header .container {
+    width: 100%;
+  }
+  header .container .wrapper {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.container {
+  display: flex;
+}
+.container .wrapper {
+  margin-top: 50px;
+  width: 50%;
+  font-size: 2rem;
+  font: Sans-serif;
+}
+.middleContent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  margin: 20px 50px 20px 50px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .middleContent {
+    margin: 0;
+    border: 20px solid #4c535e;
+  }
+}
+.middleContent .ListenUp {
+  width: 40%;
+  margin-left: 10px;
+}
+.middleContent .ListenUp h2 {
+  font-size: 3rem;
+}
+.middleContent .stuffImGoodAt {
+  width: 40%;
+}
+.middleContent h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.middleContent ul {
+  line-height: 1.5;
+}
+.middleContent li {
+  border: 0.5px solid lightgray;
+}
+.table {
+  width: 90%;
+}
+.table table {
+  font-size: 2rem;
+  margin-left: 50px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .table table {
+    margin-left: 25px;
+  }
+}
+.table tr:nth-child(even) {
+  background-color: #4c535e;
+}
+.table tr {
+  padding: 10px 0;
+  font-size: 2.5rem;
+}
+.subtitle {
+  border-bottom: 0.5px solid;
+  padding-bottom: 40px;
+}
+.workHistory {
+  font-size: 3rem;
+  margin-left: 50px;
+  margin-bottom: 0;
+  border-bottom: 0.5px solid;
+  margin-right: 50px;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    display: flex;
+    justify-content: center;
+  }
+}
+.contactsec {
+  margin-left: 50px;
+  margin-top: 60px;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .contactsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.contactsec h1 {
+  font-size: 3rem;
+}
+.footer {
+  width: 90%;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background: #4c535e;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  .footer {
+    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size: 1.5rem;
+  }
+  .footer h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+}
