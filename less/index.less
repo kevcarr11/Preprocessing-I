@@ -14,7 +14,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+ header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
@@ -69,14 +69,28 @@ html, body {
 .topNavigation{
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 10px;
+	margin-right: 10px;
 
+	@media(max-width: 515px ){
+		width: 100%;
+	}
+		
 		nav{
 		margin-bottom: 20px;
 		width: 30%;
 		display: flex;
-		justify-content: space-around;
+
 	
 			font-size: 1.5rem;
+			justify-content: space-around;
+			
+
+			@media(max-width: 515px){
+				width: 100%;
+				justify-content: space-around;
+			}
+			
 		}
 }
 
@@ -102,6 +116,31 @@ header{
 	margin: 40px;
 	padding: 25px;
 	
+	
+	@media(max-width: 515px){
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0;
+		align-items: center;
+
+			.container{
+				width: 100%;
+			
+				.wrapper{
+				justify-content: center;
+				align-items: center;
+
+					width: 100%;
+				}
+			}
+				
+
+			
+		
+		
+		}
 
 }
 
@@ -124,10 +163,17 @@ header{
 	font-size: 1.8rem;
 	margin: 20px 50px 20px 50px;
 	margin-bottom: 20px;
+
+	@media(max-width: 515px){
+		margin: 0;
+		border: 20px solid @Trout;
+				
+	}
 	
 
 		.ListenUp{
 			width: 40%;
+			margin-left: 10px;
 
 				h2{
 				font-size: 3rem;
@@ -159,6 +205,13 @@ header{
 		font-size: 2rem;
 		margin-left: 50px;
 		width: 100%;
+		
+
+		@media(max-width: 515px){
+			margin-left: 25px;
+			
+		}
+	}
 
 		tr:nth-child(even) {
 			background-color: @Trout;
@@ -170,7 +223,7 @@ header{
 			}
 	}
 
-}
+
 
 
 
@@ -185,7 +238,13 @@ header{
 	margin-bottom: 0;
 	border-bottom: .5px solid;
 	margin-right: 50px;
+
+	@media(max-width: 515px){
+		display: flex;
+		justify-content: center;
+	}
 }
+
 
 
 
@@ -193,23 +252,48 @@ header{
 	margin-left: 50px;
 	margin-top: 60px;
 	font-size: 1.5rem;
-	.ListenUp();
+
+	@media(max-width: 515px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		width: 100%;
+		
+	}
+	
 
 
 		h1{
-			font-size: 2rem;
+			font-size: 3rem;
 
 		}
 }
 
 
-.footer{
-	font-size: 5rem;
-	margin-right: 50px;
+.footer{	
+	width:90%;
+	height: 60px;
 	margin-left: 50px;
-	background: @Rhino;
-	
+	margin-top: 20px;
+	background: @Trout;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: white;
+
+	@media(max-width: 515px){
+		margin-left: 20px;
+		.contactsec();
+		
+	}
+
+
 }
+		
+	
+	
+
 	
 	
 

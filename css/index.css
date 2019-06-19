@@ -70,7 +70,6 @@ details,
 embed,
 figure,
 figcaption,
-footer,
 header,
 hgroup,
 menu,
@@ -96,7 +95,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
@@ -138,13 +136,26 @@ body {
 .topNavigation {
   display: flex;
   justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 515px) {
+  .topNavigation {
+    width: 100%;
+  }
 }
 .topNavigation nav {
   margin-bottom: 20px;
   width: 30%;
   display: flex;
-  justify-content: space-around;
   font-size: 1.5rem;
+  justify-content: space-around;
+}
+@media (max-width: 515px) {
+  .topNavigation nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 img {
   border-radius: 5px;
@@ -160,6 +171,24 @@ header {
   background: #4c535e;
   margin: 40px;
   padding: 25px;
+}
+@media (max-width: 515px) {
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+  header .container {
+    width: 100%;
+  }
+  header .container .wrapper {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }
 .container {
   display: flex;
@@ -177,8 +206,15 @@ header {
   margin: 20px 50px 20px 50px;
   margin-bottom: 20px;
 }
+@media (max-width: 515px) {
+  .middleContent {
+    margin: 0;
+    border: 20px solid #4c535e;
+  }
+}
 .middleContent .ListenUp {
   width: 40%;
+  margin-left: 10px;
 }
 .middleContent .ListenUp h2 {
   font-size: 3rem;
@@ -204,10 +240,15 @@ header {
   margin-left: 50px;
   width: 100%;
 }
-.table table tr:nth-child(even) {
+@media (max-width: 515px) {
+  .table table {
+    margin-left: 25px;
+  }
+}
+.table tr:nth-child(even) {
   background-color: #4c535e;
 }
-.table table tr {
+.table tr {
   padding: 10px 0;
   font-size: 2.5rem;
 }
@@ -222,11 +263,57 @@ header {
   border-bottom: 0.5px solid;
   margin-right: 50px;
 }
+@media (max-width: 515px) {
+  .workHistory {
+    display: flex;
+    justify-content: center;
+  }
+}
 .contactsec {
   margin-left: 50px;
   margin-top: 60px;
   font-size: 1.5rem;
 }
+@media (max-width: 515px) {
+  .contactsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+}
 .contactsec h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+.footer {
+  width: 90%;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background: #4c535e;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+@media (max-width: 515px) {
+  .footer {
+    margin-left: 20px;
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size: 1.5rem;
+  }
+  .footer h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 515px) and (max-width: 515px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
 }
